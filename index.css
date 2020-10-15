@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+body{
+    background-color: #242424;
+}
+
+.footer {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    background-color: black;
+    color: white;
+
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#title{
+    font-family: 'Staatliches', cursive;
+    color:white;
+    font-size: 60px;
+    text-align: center;
+}
+
+#start{
+    border: none;
+    border-radius: 10px;
+
+    font-size: 40px;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    color: white;
+    background-color: black;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 40%;
+}
+
+#scores{
+    font-family: 'Roboto', sans-serif;
+}
+
+#start:hover{
+    color: black;
+    background-color: white;
+}
+
+#header-ingame{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    color: white;
+}
+#score {
+    font-size: 40px;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+
+}
+#timer {
+    font-size: 15px;
+    display: inline-block;
+}
+
+
+#game{
+    margin: 0 auto;
+    background-color: #242424;
+    width: 40%;
+    margin-bottom: 10%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px;
+}
+.grid-item {
+    background-color: white;
+    border: black solid 1px;
+    border-radius: 5px;
+    width: 120px;
+    height: 120px;
+}

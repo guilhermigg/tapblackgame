@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TapBlack</title>
+    <link  rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- This header will only show up in game screen -->
+    <div id="header-ingame" style="display:none">
+        <h1 id="score"> </h1>
+        <h1 id="timer"> </h1>
+    </div>
+
+    <!-- Menu Header -->
+    <div id="header">
+        <img src="sound.png" onclick="changeSoundState('mute')" width="30px" style="display: floating" id="sound">
+        <h1 id="title"> TapBlack </h1>
+        <hr style="width: 50%; color: white;">
+
+        <div id="scores" style="text-align: center; color: white;">
+            <p id="free-highscore">Highscore (FreeMode): </p>
+            <p id="time-highscore">Highscore (TimedMode): </p>
+            <p id="lastscore">Last score: 0</p>
+        </div>
+
+        <button id="start" onclick="start('free')"> Start Free Mode </button>
+        <button id="start" onclick="start('timed')"> Start Timed Mode </button>
+    </div>
+
+    <!-- Game Field -->
+    <div id="game" class="grid-container"> </div>
+
+    <div class="footer">
+        <p> <b> TapBlack - Made by:<a href="https://github.com/guilhermigg" target="blank">@guilhermigg</a> </b></p>
+    </div>
+</body>
+
+<script src="game.js"></script>
+<script src="ui.js"></script>
+</html>
